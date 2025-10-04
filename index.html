@@ -1,171 +1,151 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/web-desktop-icon.png">
-    <link rel="stylesheet" href="https://jdan.github.io/98.css/98.css">  <!-- 98.css -->
-    <link rel="stylesheet" type="text/css" href="style.css"> <!-- 読み込み順序注意 -->
-
-    <title>Web Desktop</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/web-desktop-icon.png">
+  <link rel="stylesheet" href="https://jdan.github.io/98.css/98.css">  <!-- 98.css -->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- 読み込み順序注意 -->
+  <title>Web Desktop</title>
 </head>
 <body>
 
-              <div class="window">
-        <div class="title-bar">
-          <div class="title-bar-text" id="notepad-title">Notepad - EXPERIENCES</div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-          </div>
-        </div>
-        <div class="window-body">
-          <p class="menu"><span class="underline">F</span>ile</p>
-          <p class="menu"><span class="underline">E</span>dit</p>
-          <p class="menu"><span class="underline">V</span>iew</p>
-          <p class="menu"><span class="underline">H</span>elp</p>
-
-          <ul class="tree-view">
-            <li>開発経験</li>
-            <li>
-              ・小規模な業務システムの開発
-              <ul>
-                <li>帳票管理ソフト</li>
-              </ul>
-            </li>
-            <p>・小規模な業務システムの開発 <br>
-                知人からの依頼で、Accessを用いた帳票管理ソフトを製作した経験があります。<br>
-                納品物にも満足して頂き、高評価やお褒めの言葉を頂き、やりがいを感じることができました。<br>
-                システムの開発を通じて使用の擦り合わせや要件定義、入力ミスを減らすためのGUI画面デザインの工夫など小規模の開発でしたが、非常に良い経験になったと感じています。<br>
-            </p>
-          </ul>
-        </div>
-      </div>
-
-
-</body>
-</html>
-
-
-      <div class="window" id="skills">
-        <div class="title-bar">
-          <div class="title-bar-text">Title - SKILLS</div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-          </div>
-        </div>
-        <div class="window-body">
-
-          <div class="progress-indicator" style="position: relative;">
-            <span class="progress-indicator-bar"  style="width: 95%;"></span>
-            <span class="progress-text">英語</span>
-          </div>
-
-          <div class="progress-indicator">
-            <span class="progress-indicator-bar"  style="width: 85%;"></span>
-            <span class="progress-text">Python</span>
-          </div>
-
-          <div class="progress-indicator">
-            <span class="progress-indicator-bar"  style="width: 87%;"></span>
-            <span class="progress-text">VBA</span>
-          </div>
-
-          <div class="progress-indicator">
-            <span class="progress-indicator-bar"  style="width: 75%;"></span>
-            <span class="progress-text">Web系</span>
-          </div>
-
-          <div class="progress-indicator">
-            <span class="progress-indicator-bar"  style="width: 70%;"></span>
-            <span class="progress-text">C</span>
-          </div>
-      <p>スキル</p>
-    <p>・プログラミング言語：Python, VBA, C, Java, SQL</p>
-    <p>・Web系：JavaScript, HTML, CSS</p>
-    <p>主にPythonやVBAを使用し、自動化ツールの開発や趣味の電子工作にも取り組んでいます。</p>
-      <br>
-      <p>・使用ツール -  VisualStudio / Figma / Git / Github</p>
-      <p>・環境 - Windows / Linux / CLI</p>
-      <br>
-      <p>資格：</p>
-      <p>・TOEIC 800 </p>
-      <p>・普通自動車免許（MT）</p> 
-      <p>・ フォークリフト運転技能講習</p>
-      </div>
-
-    </div>
-
-
+  <!-- EXPERIENCES -->
   <div class="window">
     <div class="title-bar">
-      <div class="title-bar-text">Title - Web Desktop Ver.0.9</div>
+      <div class="title-bar-text" id="notepad-title">Notepad - EXPERIENCES</div>
       <div class="title-bar-controls">
         <button aria-label="Minimize"></button>
         <button aria-label="Maximize"></button>
         <button aria-label="Close"></button>
       </div>
-
     </div>
     <div class="window-body">
-      <p></p>
+      <p class="menu"><span class="underline">F</span>ile</p>
+      <p class="menu"><span class="underline">E</span>dit</p>
+      <p class="menu"><span class="underline">V</span>iew</p>
+      <p class="menu"><span class="underline">H</span>elp</p>
+
+      <ul class="tree-view">
+        <li>開発経験</li>
+        <li>
+          ・小規模な業務システムの開発
+          <ul>
+            <li>Access帳票管理ソフト</li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        知人の依頼で Access を用いた帳票管理ソフトを開発しました。<br>
+        要件ヒアリングからUI設計、入力ミスを防ぐ工夫を行い、納品まで担当しました。<br>
+        納品時には高い評価をいただき、この経験を通じて「業務効率化」「ユーザー目線の設計」の重要性を学びました。
+      </p>
     </div>
+  </div>
 
+  <!-- SKILLS -->
+  <div class="window" id="skills">
+    <div class="title-bar">
+      <div class="title-bar-text">Title - SKILLS</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
 
-
-    <div class="window" id="my-profile">
-        <div class="title-bar">
-          <div class="title-bar-text">Title - MY PROFILE</div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-          </div>
-        </div>
-        <div class="window-body">
-            <div class="item_box">
-            <a class="item_link" href="#">
-              <div class="item_content">
-                <div class="item_image">
-                  <img src="assets/uranium_glass_frog.jpeg" alt="URANIUM-FROG-KUN">
-                </div>
-                <div class="item_mask">
-                  <div class="item_mask-text">コレクション - ウランガラスビーズのカエルくん</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <p id="name">NAME：ヨシカワ（HN：KICK-HOUR）</p>
-
-          <br>
-          <p>出来ること：<br>
-                ・プログラミング<br>
-                 &nbsp;ソフト開発、簡単なWEBページの製作、自動化ツールの製作<br>
-                ・電子機器（PC・スマホ・家電）のパーツ交換やジャンク修理<br>
-                ・ハンダ付け<br>
-                ・フォークリフトの運転<br>
-                ・普通自動車の運転（MT可）<br>
-                ・英語でのメールのやり取りやチャットでの対応<br>
-                ・Officeソフトの基本的な操作<br>
-          </p>
-          <br>
-          <p>趣味： <br>
-             ・プログラミングと電子工作 -  Pythonでちょっとした便利ツールを作ったり、ArduinoやESP32などのマイコンで生活での困りごとを解消するガジェットを作ったりしています<br>
-             ・家庭菜園 -  自作の自動潅水（水やり）装置を使ってプランターで色々な野菜を育てています <br>
-             ・コレクション -  変なモノやレトロなモノを集めるのが好きです
-          </p>
-
-
-          <p>好物： <br> ・月餅　・杏仁豆腐　・回鍋肉　・白身魚のフライ</p>
-          <p>
-            ひとこと：<br>
-            未経験の分野も多いですが、積極的に学びながら業務を通して成長し、早くお役に立てるように頑張りたいと思います！よろしくお願いいたします。</p>
-        </div>
+      <div class="progress-indicator" style="position: relative;">
+        <span class="progress-indicator-bar" style="width: 95%;"></span>
+        <span class="progress-text">英語（TOEIC 800）</span>
       </div>
 
+      <div class="progress-indicator">
+        <span class="progress-indicator-bar" style="width: 85%;"></span>
+        <span class="progress-text">Python</span>
+      </div>
 
+      <div class="progress-indicator">
+        <span class="progress-indicator-bar" style="width: 87%;"></span>
+        <span class="progress-text">VBA</span>
+      </div>
+
+      <div class="progress-indicator">
+        <span class="progress-indicator-bar" style="width: 75%;"></span>
+        <span class="progress-text">Web系</span>
+      </div>
+
+      <div class="progress-indicator">
+        <span class="progress-indicator-bar" style="width: 70%;"></span>
+        <span class="progress-text">C</span>
+      </div>
+
+      <p><b>スキル</b></p>
+      <p>・プログラミング言語：Python, VBA, Java, SQL, C</p>
+      <p>・Web系：JavaScript, HTML, CSS</p>
+      <p>主に Python / VBA による自動化ツール開発を経験。趣味で電子工作やガジェット制作も行っています。</p>
+      <br>
+      <p>・使用ツール - Visual Studio / Figma / Git / GitHub</p>
+      <p>・環境 - Windows / Linux / CLI</p>
+      <br>
+      <p><b>資格：</b></p>
+      <p>・TOEIC 800</p>
+      <p>・普通自動車免許（MT）</p>
+      <p>・フォークリフト運転技能講習</p>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="window" id="my-profile">
+    <div class="title-bar">
+      <div class="title-bar-text">Title - MY PROFILE</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="item_box">
+        <a class="item_link" href="#">
+          <div class="item_content">
+            <div class="item_image">
+              <img src="assets/uranium_glass_frog.jpeg" alt="URANIUM-FROG-KUN">
+            </div>
+            <div class="item_mask">
+              <div class="item_mask-text">コレクション - ウランガラスビーズのカエルくん</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <p id="name">NAME：ヨシカワ（HN：KICK-HOUR）</p>
+
+      <br>
+      <p><b>できること：</b><br>
+        ・業務効率化のためのプログラミング（Python / VBA）<br>
+        ・Access, Excel を使ったシステムや自動化ツール開発<br>
+        ・電子機器（PC・スマホ・家電）のパーツ交換・修理<br>
+        ・ハンダ付け<br>
+        ・普通自動車運転（MT） / フォークリフト運転<br>
+        ・英語でのメールやチャット対応<br>
+        ・Officeソフトの基本操作
+      </p>
+
+      <br>
+      <p><b>趣味：</b><br>
+        ・プログラミングと電子工作 - Pythonで便利ツール開発、Arduino/ESP32でガジェット制作<br>
+        ・家庭菜園 - 自作の自動潅水装置で野菜栽培<br>
+        ・コレクション - 変わったものやレトロ品の収集
+      </p>
+
+      <br>
+      <p><b>ひとこと：</b><br>
+        未経験分野もありますが、積極的に学びながら業務を通して成長し、現場の課題解決に貢献できるよう努力します。<br>
+        よろしくお願いいたします。
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
