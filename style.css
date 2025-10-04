@@ -1,0 +1,167 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://unpkg.com/nes.css@latest/css/nes.min.css");
+
+@font-face {
+  font-family: "marumi";
+  src: url("fonts/x12y12pxMaruMinya.ttf");
+}
+
+
+
+
+@font-face {
+    font-family: "VT323";
+    src: url("fonts/VT323-Regular.ttf");
+}
+html {
+    font-size: 13px; /* 1rem=13px */
+
+}
+
+body {
+
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    height: 100%;
+    width: 85%;
+    margin: 10% auto;
+    background-color: #91b1cc;
+    background-image: url("assets/sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* 中央配置 */
+}
+
+.window {
+    width: 90%;
+    margin: 10% auto;
+    background-color: #e9e9e9;  /* #E0E0E0 */
+    font-size: 1rem;
+    font-family: "DotGothic16", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.title-bar-text {
+    font-family: marumi;
+    letter-spacing: 0.2em;
+}
+
+.progress-indicator {
+    position: relative; /* 疑似要素を正しく配置するため */
+    width: 50%;
+    height: 20px;
+    margin: 10px auto;
+}
+
+.progress-indicator {
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  left: 0; top: 0; width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  font-family: "marumi";
+  font-weight: bold;
+  color: white; /* 進捗色に合わせて調整 */
+  z-index: 2;
+}
+
+
+.menu {
+    display: inline-block;
+    letter-spacing: 0.1em;
+
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+.tree-view, .tree-view * {
+  font-family: "DotGothic16", serif;
+}
+
+
+#name {
+    font-family: "marumi";
+    font-weight: bold;
+}
+
+
+
+img {
+    border-radius: 50%;  /*角を丸く指定*/
+    width: 60px;
+    height: 60px;
+}
+
+/*画像ホバー時*/
+.item_box * {
+  box-sizing: border-box;
+}
+
+.item_box {
+  width: 100%;
+  max-width: 100px;
+}
+
+.item_link {
+  display: block;
+}
+
+.item_content {
+  position: relative;
+  overflow: hidden;
+}
+
+.item_image img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.item_mask {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+
+.item_mask-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 0.8em;
+  text-align: center;
+  color: #fff;
+  transform: translateY(-50%);
+}
+
+.item_text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.item_box .item_link:hover .item_mask {
+  opacity: 1;
+}
